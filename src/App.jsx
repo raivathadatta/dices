@@ -1,12 +1,12 @@
 import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
+// import reactLogo fromreact.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
   let [imageIndex, setDiceOne] = useState(0)
   let [imageIndexDice2, setDiceTwo] = useState(0)
-  let imageArray = ['src/assets/one.png', 'src/assets/two.png', 'src/assets/three.png', 'src/assets/four.png', 'src/assets/five.png', 'src/assets/six.png'];
+  let imageArray = ['one.png', 'two.png', 'three.png', 'four.png', 'five.png', 'six.png'];
   console.log(imageArray[imageIndex])
   let whoWIn = imageIndex > imageIndexDice2 ? 'Player 1 Wins' : imageIndex < imageIndexDice2 ? 'Player 2 Wins' : 'Tie'
 
