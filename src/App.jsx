@@ -19,20 +19,20 @@ function App() {
 
   return (
     <>
-      <div className='w-[50%] h-[70%] bg-black  mt[10%] p-4  '>
-        <h1 className='text-[40px] font-black text-white'>{whoWIn}</h1>
+      <div className='w-[50%] h-[50%] bg-black  mt[10%] p-4 text-red-500'>
+        <h1 className='text-[40px] font-black '>{whoWIn}</h1>
         <div className=' flex flex-row justify-between' >
      
           <div className="w-[50%] ">
-          <h1 className='text-[30px] text-white font-bold'>Player 1</h1>
+          <h1 className='text-[30px] font-bold'>Player 1</h1>
             <img className='w-[100%] h-[100%] transform transition duration-300 hover:rotate-90' src={imageArray[imageIndex]} />
           </div>
           <div className=" w-[50%]">
-            <h1 className='text-[30px] text-white font-bold'>Player 2</h1>
+            <h1 className='text-[30px] font-bold'>Player 2</h1>
             <img className='w-[100%] h-[100%] transform transition duration-300 hover:rotate-90' src={imageArray[imageIndexDice2]} />       </div>
 
         </div>
-        <button className='w-[20%] h-[20%] bg-slate-50 p-5 mt-[8%] font-bold' onClick={changeImage}>Play</button>
+        <button className='w-[20%] h-[20%] bg-red-500 p-5 mt-[8%] font-bold text-black' onClick={changeImage}>Play</button>
       </div>
     </>
   )
