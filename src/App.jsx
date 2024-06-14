@@ -11,8 +11,8 @@ function App() {
   let whoWIn = imageIndex > imageIndexDice2 ? 'Player 1 Wins' : imageIndex < imageIndexDice2 ? 'Player 2 Wins' : 'Tie'
 
   function changeImage() {
-    setDiceOne(imageIndex = Math.floor(Math.random() * 6))
-    setDiceTwo(imageIndexDice2 = Math.floor(Math.random() * 6))
+    setDiceOne(Math.floor(Math.random() * 6))
+    setDiceTwo(Math.floor(Math.random() * 6))
     
   }
 
