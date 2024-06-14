@@ -9,14 +9,10 @@ function App() {
 
   let whoWon = dices.dices1 > dices.dices2 ? 'Player 1 Wins' : dices.dices1 < dices.dices2 ? 'Player 2 Wins' : 'Tie'
 
-
   function changeImage() {
-
     let dices1 = Math.floor((Math.random() * 10) % 6)
     let dices2 = Math.floor((Math.random() * 10) % 6)
-
     setDiceOne({ dices1, dices2 })
-
   }
 
 
@@ -33,7 +29,6 @@ function App() {
             <h1 className='text-[30px] font-bold'>Player 2</h1>
             <img className='w-[100%] h-[100%] transform transition duration-300 hover:rotate-90' src={imageArray[dices.dices2]} />
           </div>
-
         </div>
         <button className='w-[20%] h-[20%] bg-red-500 p-5 mt-[8%] font-bold text-black' onClick={changeImage}>Play</button>
       </div>
