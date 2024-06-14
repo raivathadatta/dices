@@ -8,7 +8,7 @@ function App() {
   let [imageIndexDice2, setDiceTwo] = useState(0)
   let imageArray = ['one.png', 'two.png', 'three.png', 'four.png', 'five.png', 'six.png'];
   console.log(imageArray[imageIndex])
-  let whoWIn = imageIndex > imageIndexDice2 ? 'Player 1 Wins' : imageIndex < imageIndexDice2 ? 'Player 2 Wins' : 'Tie'
+  let whoWon = imageIndex > imageIndexDice2 ? 'Player 1 Wins' : imageIndex < imageIndexDice2 ? 'Player 2 Wins' : 'Tie'
 
 
   function changeImage() {
@@ -23,7 +23,7 @@ function App() {
   return (
     <>
       <div className='w-[50%] h-[50%] bg-black  mt[10%] p-4 text-red-500'>
-        <h1 className='text-[40px] font-black '>{whoWIn}</h1>
+        <h1 className='text-[40px] font-black '>{whoWon}</h1>
         <div className=' flex flex-row justify-between' >
      
           <div className="w-[50%] ">
