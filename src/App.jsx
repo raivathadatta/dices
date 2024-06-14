@@ -10,9 +10,12 @@ function App() {
   console.log(imageArray[imageIndex])
   let whoWIn = imageIndex > imageIndexDice2 ? 'Player 1 Wins' : imageIndex < imageIndexDice2 ? 'Player 2 Wins' : 'Tie'
 
+
   function changeImage() {
-    setDiceOne(Math.floor(Math.random() * 6))
-    setDiceTwo(Math.floor(Math.random() * 6))
+    // console.log(Math.floor((Math.random() * 10)%6))
+    setDiceOne(Math.floor((Math.random() * 10)%6))
+    setDiceTwo(Math.floor((Math.random() * 10)%6))
+
     
   }
 
